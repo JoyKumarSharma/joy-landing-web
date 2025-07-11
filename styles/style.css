@@ -1,0 +1,479 @@
+/* Global styles and basic reset for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Body styles */
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #F8F8FF; /* Light background from design */
+    color: #333; /* Default text color */
+    line-height: 1.6;
+}
+
+/* Reusable Utility Classes */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.secondary-bg {
+    background-color: #F0F2F5;
+}
+
+.dark-2 {
+    color: #474747;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Primary Button Styles (HTML: .btn-primary) */
+.btn-primary {
+    background-color: #6A00FF;
+    color: #fff;
+    padding: 18px 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #4A00B5;
+    transform: translateY(-2px);
+}
+
+/* Secondary Button Styles (HTML: .btn-secondary) */
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #6A00FF;
+    color: #6A00FF;
+    padding: 18px 35px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-secondary:hover {
+    background-color: #6A00FF;
+    color: white;
+}
+
+/* Common Section Title Styles (HTML: .section-title) */
+.section-title {
+    font-size: 35px;
+    font-weight: bold;
+    color: #181818;
+    margin-bottom: 30px;
+}
+
+/* Main Header Section (HTML: .header) */
+.header {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 80px;
+}
+/* Common Section Description Text (HTML: .section-description) */
+.section-description {
+    font-size: 18px;
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+/* Consistent spacing between main sections */
+main section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* Navigation Bar (HTML: .nav) */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+/* Navigation Logo Title (HTML: .nav-title) */
+.nav-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #6A00FF;
+}
+.nav ul {
+    list-style: none;
+}
+
+/* Banner Section (HTML: .banner) */
+.banner {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+/* Banner Content Area (HTML: .banner-content) */
+.banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* Banner Main Title (HTML: .banner-title) */
+.banner-title {
+    font-size: 64px;
+    font-weight: 800;
+    color: #2D3748;
+    margin-bottom: 40px;
+}
+
+/* Action Section (HTML: .action-section) */
+.action-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+/* Action Section Left Content (HTML: .action-left) */
+.action-left {
+    max-width: 500px;
+}
+.action-left .section-title {
+    font-size: 48px;
+}
+/* Action Section Right Image (HTML: .action-right img) */
+.action-right img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Productive Users Stats Section (HTML: .users-stats-section) */
+.users-stats-section {
+    padding: 80px 50px;
+    border-radius: 15px;
+    margin-top: 80px;
+}
+.users-stats-section .section-title {
+    margin-bottom: 60px;
+}
+/* Statistics Display Container (HTML: .stats-container) */
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+/* Individual Statistic Item (HTML: .stat-item) */
+.stat-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    flex: 1;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+/* Statistic Number (HTML: .stat-number) */
+.stat-number {
+    font-size: 56px;
+    font-weight: 700;
+    color: #6A00FF;
+    margin-bottom: 10px;
+}
+/* Statistic Description (HTML: .stat-description) */
+.stat-description {
+    font-size: 18px;
+}
+
+/* User Reviews Section (HTML: .reviews-section) */
+.reviews-section .section-title {
+    margin-bottom: 60px;
+}
+/* Grid for Review Cards (HTML: .reviews-grid) */
+.reviews-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+/* Individual Review Card (HTML: .review-card) */
+.review-card {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    text-align: left;
+    flex: 1;
+}
+/* Star Rating inside Review Card (HTML: .stars) */
+.stars {
+    color: #FFC107;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+/* Review Card Title (HTML: .card-title) */
+.review-card .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/* Review Card Description Text (HTML: .card-description) */
+.review-card .card-description {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+/* Reviewer Information Container (HTML: .reviewer-info) */
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+/* Reviewer Avatar Image (HTML: .reviewer-avatar) */
+.reviewer-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* Reviewer Details (HTML: .reviewer-details) */
+.reviewer-details {
+    /* Contains reviewer name and date */
+}
+/* Reviewer Name (HTML: .reviewer-name) */
+.reviewer-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+/* Review Date (HTML: .review-date) */
+.review-date {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Focus Section (HTML: .focus-section) */
+.focus-section {
+    padding: 80px 50px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 80px;
+}
+.focus-section .section-title {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.focus-section .section-description {
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+/* Wrapper for Focus Image (HTML: .focus-image-wrapper) */
+.focus-image-wrapper {
+    margin-top: 60px;
+}
+/* Main Image in Focus Section (HTML: .focus-main-image) */
+.focus-main-image {
+    max-width: 800px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* Contact Section (HTML: .contact-section) */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 50px;
+    border-radius: 15px;
+    margin-top: 80px;
+}
+/* Contact Section Left Content (HTML: .contact-left) */
+.contact-left {
+    flex: 1;
+    max-width: 450px;
+}
+.contact-left .section-title {
+    font-size: 60px;
+    font-weight: 900;
+}
+/* Contact Section Right Form Area (HTML: .contact-right) */
+.contact-right {
+    flex: 2;
+    max-width: 550px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+/* Form Input Fields (HTML: input, textarea inside .contact-right) */
+.contact-right input,
+.contact-right textarea {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    font-family: inherit;
+}
+.contact-right input:focus,
+.contact-right textarea:focus {
+    outline: none;
+    border-color: #6A00FF;
+}
+/* Submit Button in Contact Form (HTML: .submit-btn) */
+.contact-right .submit-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+}
+
+/* Footer Section (HTML: .footer) */
+.footer {
+    /* background-color: #F8F8FF; <-- REMOVED: This was redundant with secondary-bg */
+    padding: 80px 50px;
+    text-align: center;
+    margin-top: 80px;
+}
+/* Footer Content Wrapper (HTML: .footer-content) */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Footer Logo (HTML: .footer-logo) */
+.footer-logo {
+    font-size: 48px;
+    font-weight: bold;
+    color: #6A00FF;
+    margin-bottom: 20px;
+}
+/* Footer Description Text (HTML: .footer-description) */
+.footer-description {
+    max-width: 600px;
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+/* Footer Navigation Links (HTML: .footer-links) */
+.footer-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.footer-links li a {
+    color: #666;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+.footer-links li a:hover {
+    color: #6A00FF;
+}
+
+/* Basic Responsive Styles for smaller screens */
+@media (max-width: 768px) {
+    /* Container (HTML: .container) */
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Navigation Bar (HTML: .nav) */
+    .nav {
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+    .nav .nav-title {
+        margin-bottom: 15px;
+    }
+
+    /* Banner Title (HTML: .banner-title) */
+    .banner-title {
+        font-size: 40px;
+    }
+
+    /* Main Sections Layout (HTML: .action-section, .contact-section, .stats-container, .reviews-grid) */
+    .action-section,
+    .contact-section,
+    .stats-container,
+    .reviews-grid {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+    /* Action Section Left (HTML: .action-left), Contact Sections (HTML: .contact-left, .contact-right), Review Card (HTML: .review-card), Stat Item (HTML: .stat-item) */
+    .action-left,
+    .contact-left,
+    .contact-right,
+    .review-card,
+    .stat-item {
+        max-width: 100%;
+        width: 100%;
+    }
+    /* Action Section Right Image (HTML: .action-right img), Focus Main Image (HTML: .focus-main-image) */
+    .action-right img,
+    .focus-main-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Reviewer Info (HTML: .reviewer-info) */
+    .reviewer-info {
+        justify-content: center;
+    }
+
+    /* Section Title (HTML: .section-title) */
+    .section-title {
+        font-size: 30px;
+    }
+    .contact-left .section-title {
+        font-size: 45px;
+    }
+
+    /* Padding for various sections on smaller screens */
+    /* Users Stats (HTML: .users-stats-section), Focus Section (HTML: .focus-section), Contact Section (HTML: .contact-section), Footer (HTML: .footer) */
+    .users-stats-section,
+    .focus-section,
+    .contact-section,
+    .footer {
+        padding: 50px 15px;
+    }
+    /* Statistic Number (HTML: .stat-number) */
+    .stat-number {
+        font-size: 40px;
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+    /* Primary & Secondary Buttons (HTML: .btn-primary, .btn-secondary) */
+    .btn-primary, .btn-secondary {
+        padding: 15px 25px;
+        font-size: 18px;
+    }
+    /* Banner Title (HTML: .banner-title) */
+    .banner-title {
+        font-size: 32px;
+    }
+    /* Section Title (HTML: .section-title) */
+    .section-title {
+        font-size: 28px;
+    }
+    .contact-left .section-title {
+        font-size: 38px;
+    }
+    /* Footer Logo (HTML: .footer-logo) */
+    .footer-logo {
+        font-size: 36px;
+    }
+    /* Footer Links (HTML: .footer-links) */
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
