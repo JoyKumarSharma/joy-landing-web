@@ -1,4 +1,4 @@
-/* Global styles and basic reset for all elements */
+/* Global styles  */
 * {
     margin: 0;
     padding: 0;
@@ -232,18 +232,18 @@ main section {
     align-items: center;
     gap: 15px;
 }
-/* Reviewer Avatar Image (HTML: .reviewer-avatar) */
+/* Reviewer Avatar Image ( .reviewer-avatar) */
 .reviewer-avatar {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
-/* Reviewer Details (HTML: .reviewer-details) */
+/* Reviewer Details ( .reviewer-details) */
 .reviewer-details {
     /* Contains reviewer name and date */
 }
-/* Reviewer Name (HTML: .reviewer-name) */
+/* Reviewer name (HTML: .reviewer-name) */
 .reviewer-name {
     font-weight: bold;
     font-size: 16px;
@@ -269,11 +269,11 @@ main section {
     max-width: 600px;
     margin: 0 auto 40px;
 }
-/* Wrapper for Focus Image (HTML: .focus-image-wrapper) */
+/* Wrapper for Focus Image ( .focus-image-wrapper) */
 .focus-image-wrapper {
     margin-top: 60px;
 }
-/* Main Image in Focus Section (HTML: .focus-main-image) */
+/* Main Image in Focus Section ( .focus-main-image) */
 .focus-main-image {
     max-width: 800px;
     width: 100%;
@@ -281,7 +281,7 @@ main section {
     box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
-/* Contact Section (HTML: .contact-section) */
+/* Contact Section  */
 .contact-section {
     display: flex;
     justify-content: space-between;
@@ -291,7 +291,7 @@ main section {
     border-radius: 15px;
     margin-top: 80px;
 }
-/* Contact Section Left Content (HTML: .contact-left) */
+/* Contact Section Left Content  */
 .contact-left {
     flex: 1;
     max-width: 450px;
@@ -300,7 +300,7 @@ main section {
     font-size: 60px;
     font-weight: 900;
 }
-/* Contact Section Right Form Area (HTML: .contact-right) */
+/* Contact Section Right Form Area (*/
 .contact-right {
     flex: 2;
     max-width: 550px;
@@ -309,7 +309,7 @@ main section {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
-/* Form Input Fields (HTML: input, textarea inside .contact-right) */
+/* Form Input Fields  */
 .contact-right input,
 .contact-right textarea {
     width: 100%;
@@ -334,7 +334,7 @@ main section {
 
 /* Footer Section (HTML: .footer) */
 .footer {
-    /* background-color: #F8F8FF; <-- REMOVED: This was redundant with secondary-bg */
+
     padding: 80px 50px;
     text-align: center;
     margin-top: 80px;
@@ -352,14 +352,14 @@ main section {
     color: #6A00FF;
     margin-bottom: 20px;
 }
-/* Footer Description Text (HTML: .footer-description) */
+/* Footer Description Text  */
 .footer-description {
     max-width: 600px;
     color: #555;
     margin-bottom: 30px;
     font-size: 16px;
 }
-/* Footer Navigation Links (HTML: .footer-links) */
+/* Footer Navigation Links  */
 .footer-links {
     display: flex;
     gap: 30px;
@@ -377,12 +377,12 @@ main section {
 
 /* Basic Responsive Styles for smaller screens */
 @media (max-width: 768px) {
-    /* Container (HTML: .container) */
+    
     .container {
         padding: 0 15px;
     }
 
-    /* Navigation Bar (HTML: .nav) */
+    /* Navigation Bar ( .nav) */
     .nav {
         flex-direction: column;
         padding: 20px 15px;
@@ -391,12 +391,12 @@ main section {
         margin-bottom: 15px;
     }
 
-    /* Banner Title (HTML: .banner-title) */
+    /* Banner Title ( banner-title) */
     .banner-title {
         font-size: 40px;
     }
 
-    /* Main Sections Layout (HTML: .action-section, .contact-section, .stats-container, .reviews-grid) */
+    /* Main Sections Layout */
     .action-section,
     .contact-section,
     .stats-container,
@@ -405,7 +405,7 @@ main section {
         gap: 40px;
         text-align: center;
     }
-    /* Action Section Left (HTML: .action-left), Contact Sections (HTML: .contact-left, .contact-right), Review Card (HTML: .review-card), Stat Item (HTML: .stat-item) */
+    /* Action SectionLeft  Contact sections review card  stat item ) */
     .action-left,
     .contact-left,
     .contact-right,
@@ -414,19 +414,19 @@ main section {
         max-width: 100%;
         width: 100%;
     }
-    /* Action Section Right Image (HTML: .action-right img), Focus Main Image (HTML: .focus-main-image) */
+    /* Action section right image */
     .action-right img,
     .focus-main-image {
         max-width: 100%;
         height: auto;
     }
 
-    /* Reviewer Info (HTML: .reviewer-info) */
+    /* Reviewer info  .reviewer-info) */
     .reviewer-info {
         justify-content: center;
     }
 
-    /* Section Title (HTML: .section-title) */
+    /* Section TiTitle (.section-title) */
     .section-title {
         font-size: 30px;
     }
@@ -434,15 +434,15 @@ main section {
         font-size: 45px;
     }
 
-    /* Padding for various sections on smaller screens */
-    /* Users Stats (HTML: .users-stats-section), Focus Section (HTML: .focus-section), Contact Section (HTML: .contact-section), Footer (HTML: .footer) */
+    /* Padding for bivinno rokomer displY */
+    /* Users Stats */
     .users-stats-section,
     .focus-section,
     .contact-section,
     .footer {
         padding: 50px 15px;
     }
-    /* Statistic Number (HTML: .stat-number) */
+    /* Statistic Number (.stat-number) */
     .stat-number {
         font-size: 40px;
     }
@@ -450,27 +450,27 @@ main section {
 
 /* Further adjustments for very small screens */
 @media (max-width: 480px) {
-    /* Primary & Secondary Buttons (HTML: .btn-primary, .btn-secondary) */
+    /* Primary & Secondary Buttons (.btn-primary, .btn-secondary) */
     .btn-primary, .btn-secondary {
         padding: 15px 25px;
         font-size: 18px;
     }
-    /* Banner Title (HTML: .banner-title) */
+    /* Banner title ( .banner-title) */
     .banner-title {
         font-size: 32px;
     }
-    /* Section Title (HTML: .section-title) */
+    /* Sectiont itle ( .section-title) */
     .section-title {
         font-size: 28px;
     }
     .contact-left .section-title {
         font-size: 38px;
     }
-    /* Footer Logo (HTML: .footer-logo) */
+    /* Footerlogo ( .footer-logo) */
     .footer-logo {
         font-size: 36px;
     }
-    /* Footer Links (HTML: .footer-links) */
+    /* Footer links ( .footer-links) */
     .footer-links {
         flex-wrap: wrap;
         justify-content: center;
