@@ -8,8 +8,8 @@
 /* Base Body styles */
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: #F8F8FF; /* Light background from design */
-    color: #333; /* Default text color */
+    background-color: #bbbbdd; /* Light background from design */
+    color: #333; 
     line-height: 1.6;
 }
 
@@ -32,7 +32,7 @@ body {
     text-align: center;
 }
 
-/* Primary Button Styles (HTML: .btn-primary) */
+/* Primary buttonstyles ( .btn-primary) */
 .btn-primary {
     background-color: #6A00FF;
     color: #fff;
@@ -50,7 +50,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* Secondary Button Styles (HTML: .btn-secondary) */
+/* Secondary Button Styles ( .btn-secondary) */
 .btn-secondary {
     background-color: transparent;
     border: 2px solid #6A00FF;
@@ -67,7 +67,7 @@ body {
     color: white;
 }
 
-/* Common Section Title Styles (HTML: .section-title) */
+/* Common Section Title Styles (.section-title) */
 .section-title {
     font-size: 35px;
     font-weight: bold;
@@ -75,14 +75,14 @@ body {
     margin-bottom: 30px;
 }
 
-/* Main Header Section (HTML: .header) */
+/* Main h Section ( .header) */
 .header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding-bottom: 80px;
 }
-/* Common Section Description Text (HTML: .section-description) */
+/* common section descriptiontext  .section-description) */
 .section-description {
     font-size: 18px;
     color: #757575;
@@ -95,14 +95,14 @@ main section {
     margin-bottom: 100px;
 }
 
-/* Navigation Bar (HTML: .nav) */
+/* Navigation Bar  .nav) */
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 50px;
 }
-/* Navigation Logo Title (HTML: .nav-title) */
+/* Navigation logotitle .nav-title) */
 .nav-title {
     font-size: 36px;
     font-weight: bold;
@@ -112,18 +112,14 @@ main section {
     list-style: none;
 }
 
-/* Banner Section (HTML: .banner) */
-.banner {
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-/* Banner Content Area (HTML: .banner-content) */
+
+
+/* Banner Content Area  .banner-content) */
 .banner-content {
     max-width: 800px;
     margin: 0 auto;
 }
-/* Banner Main Title (HTML: .banner-title) */
+/* Banner Main Title ( .banner-title) */
 .banner-title {
     font-size: 64px;
     font-weight: 800;
@@ -131,21 +127,21 @@ main section {
     margin-bottom: 40px;
 }
 
-/* Action Section (HTML: .action-section) */
+/* Action Section ( .action-section) */
 .action-section {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 80px;
 }
-/* Action Section Left Content (HTML: .action-left) */
+/* Action Section Left Content ( .action-left) */
 .action-left {
     max-width: 500px;
 }
 .action-left .section-title {
     font-size: 48px;
 }
-/* Action Section Right Image (HTML: .action-right img) */
+/* Action Section Right Image (.action-right img) */
 .action-right img {
     max-width: 500px;
     width: 100%;
@@ -153,7 +149,7 @@ main section {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-/* Productive Users Stats Section (HTML: .users-stats-section) */
+/* Productive Users Stats Section ( .users-stats-section) */
 .users-stats-section {
     padding: 80px 50px;
     border-radius: 15px;
@@ -162,13 +158,13 @@ main section {
 .users-stats-section .section-title {
     margin-bottom: 60px;
 }
-/* Statistics Display Container (HTML: .stats-container) */
+/* Statistics Display Container (( .stats-container) */
 .stats-container {
     display: flex;
     justify-content: space-around;
     gap: 30px;
 }
-/* Individual Statistic Item (HTML: .stat-item) */
+/* Individual Statistic Item ( .stat-item) */
 .stat-item {
     background-color: white;
     padding: 30px;
@@ -176,29 +172,29 @@ main section {
     flex: 1;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
-/* Statistic Number (HTML: .stat-number) */
+/* Statistic Number ( .stat-number) */
 .stat-number {
     font-size: 56px;
     font-weight: 700;
     color: #6A00FF;
     margin-bottom: 10px;
 }
-/* Statistic Description (HTML: .stat-description) */
+/* Statistic Description  .stat-description) */
 .stat-description {
     font-size: 18px;
 }
 
-/* User Reviews Section (HTML: .reviews-section) */
+/* User Reviews Section .reviews-section) */
 .reviews-section .section-title {
     margin-bottom: 60px;
 }
-/* Grid for Review Cards (HTML: .reviews-grid) */
+/* Grid for Review Cards  .reviews-grid) */
 .reviews-grid {
     display: flex;
     justify-content: space-between;
     gap: 30px;
 }
-/* Individual Review Card (HTML: .review-card) */
+/* Individual Review Card  .review-card) */
 .review-card {
     background-color: white;
     padding: 40px 30px;
@@ -476,4 +472,33 @@ main section {
         justify-content: center;
         gap: 15px;
     }
+}
+
+/* extra hover effect add kori input area te  */
+
+.contact-right input,
+.contact-right textarea {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    font-family: inherit;
+    /*  smooth transition  */
+    transition: background-color 0.3s ease; /* This makes the color change smooth */
+}
+
+/* HOVER effect for inputs and textarea */
+.contact-right input:hover,
+.contact-right textarea:hover {
+    background-color: #e6e6e6; 
+}
+
+/* Focus effect  */
+.contact-right input:focus,
+.contact-right textarea:focus {
+    outline: none;
+    border-color: #6A00FF;
+    background-color: #f0f0f0; 
 }
